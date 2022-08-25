@@ -12,4 +12,10 @@ h1 {
 	color: black;
 }
 
+img{
+	display: block;
+	border-style: solid;
+	border-color: black;
+}
+
 
