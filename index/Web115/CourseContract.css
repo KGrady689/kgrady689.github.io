@@ -17,5 +17,8 @@ h2 {
 
 p {
   font-size: x-large;
-  text-align: center;
+}
+
+footer {
+  text-align: center
 }
