@@ -1,3 +1,8 @@
 @charset "utf-8";
 
+body {
+  overflow: auto;
+  background-color: rgb(168, 227, 219);
+  font-family: "Impact", "Tahoma", "arial";
 }
+
