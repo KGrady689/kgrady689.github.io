@@ -2,7 +2,7 @@
 
 body {
 	overflow: auto;
-	background-color: rgb(225, 10, 35);
+	background-color: rgb(100, 100, 100);
 	font-family: "arial", "verdana", "tahoma";
 }
 
@@ -11,3 +11,5 @@ h1 {
 	font-size: xxx-large;
 	color: black;
 }
+
+
