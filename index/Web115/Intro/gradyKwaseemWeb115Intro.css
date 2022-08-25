@@ -2,19 +2,23 @@
 
 body {
 	overflow: auto;
-	background-color: rgb(0, 0, 25);
+	background-color: rgb(0, 0, 75);
 	font-family: "arial", "verdana", "tahoma";
 }
 
 h1 {
 	text-align: center;
 	font-size: xxx-large;
-	color: black;
+	color: white;
+}
+
+p {
+	font-size:
 }
 
 img{
 	display: block;
 	border-style: solid;
-	border-color: black;
+	border-color: white;
 	margin: 25px
 }
