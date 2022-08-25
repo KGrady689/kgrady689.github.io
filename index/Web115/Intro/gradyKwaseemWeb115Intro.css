@@ -22,6 +22,11 @@ p {
 	color: white;	
 }
 
+ol {
+	font-size: x-large;
+	color: white;
+}
+
 img{
 	display: block;
 	border-style: solid;
