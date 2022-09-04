@@ -3,6 +3,10 @@
 Great Distance Homepage
 */
 
+body {
+	text-align: center;
+}
+
 .header {
 	padding-left: 25px;
 	padding-right: 25px;
@@ -14,6 +18,11 @@ Great Distance Homepage
 	grid-template-columns: 6;
 	grid-template-rows: 1;
 	grid-column-gap: 25px;
+}
+
+h1 {
+	font-family: Courier New, Courier, monospace;
+	font-size: 75px;
 }
 
 a:hover {
