@@ -19,7 +19,7 @@ p {
 	font-family: Tahoma, Verdana, sans-serif;
 }
 	
-.taskbar ul {
+ul.taskbar {
 	float: left;
 	list-style-type: none;
 	overflow: hidden;
