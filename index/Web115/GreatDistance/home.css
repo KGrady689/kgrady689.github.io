@@ -4,40 +4,13 @@ Great Distance Homepage
 */
 
 body {
-	background-color: #e6e6e6;;
+	background-color: #e6e6e6;
 	text-align: center;
 }
 
 h1 {
 	padding: 50px;
 	color: black;
-
-a:link {
-	color: white; 
-}
-
-a:visited {
-	color: white;
-}
-
-a:active {
-	color: white;
-}
-
-a:hover {
-	color: #e6e6e6;
-}
-
-.logo {
-	grid-column-start: 1;
-	grid-column-end: 1;
-}
-
-.mission {
-	grid-column-start: 2;
-	font-family: Courier New, Courier, monospace;
-	font-size: 50px;
-}
 
 p {
 	font-family: Tahoma, Verdana, sans-serif;
