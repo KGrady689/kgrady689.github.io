@@ -10,8 +10,8 @@ body {
 
 .header {
 	font-family: Courier New, Courier, monospace;
-	padding-left: 25px;
-	padding-right: 25px;
+	padding-left: 30px;
+	padding-right: 30px;
 	text-align: center;
 	background: #ac7339;
 	color: white;
@@ -19,7 +19,7 @@ body {
 	display: inline-grid;
 	grid-template-columns: 4;
 	grid-template-rows: 1;
-	grid-column-gap: 25px;
+	grid-column-gap: 50px;
 }
 
 h1 {
