@@ -15,37 +15,35 @@ h1 {
 p {
 	font-family: Tahoma, Verdana, sans-serif;
 }
-
-.header {
+	
+.taskbar {
+	float: left;
+	overflow: hidden;
 	font-family: Courier New, Courier, monospace;
+	font-size: 30px;
 	text-align: center;
-	background: #bf8040;
+	background-color: #bf8040;
 	color: white;
+	padding: 15px 20px;
+}
+
+.taskbar a {
+	color: white;
+	text-decoration: none;
 	font-size: 25px;
-	display: inline-grid;
-	grid-template-columns: 4;
-	grid-template-rows: 1;
-	grid-column-gap: 30px;
 }
 
-a:link {
-	color: white; 
+.taskbar a:hover {
+	background-color: #e6e6e6;
+	color: #04AA6D;
 }
 
-a:visited {
-	color: white;
-}
-
-a:active {
-	color: white;
-}
-
-a:hover {
-	color: #e6e6e6;
+.taskbar a.active {
+	background-color: #e6e6e6;
+	color: #04AA6D;
 }
 
 .logo {
-	padding-left: 30px;
 	grid-column-start: 1;
 	grid-column-end: 1;
 }
@@ -63,7 +61,6 @@ a:hover {
 .validators {
 	grid-column-start: 4;
 	grid-column-end: 4;
-	padding-right: 30px;
 }
 
 
