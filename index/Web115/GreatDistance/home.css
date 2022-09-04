@@ -37,12 +37,12 @@ p {
 
 .taskbar a:hover {
 	background-color: #e6e6e6;
-	color: #04AA6D;
+	color: #bf8040;
 }
 
 .taskbar a.active {
 	background-color: #e6e6e6;
-	color: #04AA6D;
+	color: #bf8040;
 }
 
 
