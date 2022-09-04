@@ -27,6 +27,22 @@ h1 {
 	font-size: 75px;
 }
 
+p {
+	font-family: Tahoma, Verdana, sans-serif;
+}
+
+a:link {
+	color: white; 
+}
+
+a:visited {
+	color: white;
+}
+
+a:active {
+	color: white;
+}
+
 a:hover {
 	color: #e6e6e6;
 }
