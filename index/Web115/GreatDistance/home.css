@@ -18,8 +18,9 @@ p {
 	font-family: Tahoma, Verdana, sans-serif;
 }
 	
-.taskbar {
+.taskbar ul {
 	float: left;
+	list-style-type: none;
 	overflow: hidden;
 	font-family: Courier New, Courier, monospace;
 	font-size: 30px;
@@ -33,6 +34,10 @@ p {
 	color: white;
 	text-decoration: none;
 	font-size: 25px;
+}
+
+.taskbar li {
+	float: left;
 }
 
 .taskbar a:hover {
