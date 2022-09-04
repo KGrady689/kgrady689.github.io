@@ -4,47 +4,29 @@ Great Distance Homepage
 */
 
 .header {
-  padding-left: 25px;
-  padding-right: 25px;
-.content {padding:20px;}
-  text-align: center;
-  background: #1abc9c;
-  color: white;
-  font-size: 30px;
-  
-  display:inline-grid;
-  grid-template-columns: 6;
-  grid-template-rows:1;
-  grid-column-gap:25px;
+	padding-left: 25px;
+	padding-right: 25px;
+	text-align: center;
+	background: #1abc9c;
+	color: white;
+	font-size: 30px;
+	display: inline-grid;
+	grid-template-columns: 6;
+	grid-template-rows: 1;
+	grid-column-gap: 25px;
 }
 
-.logo{
+.logo {
 	grid-column-start: 1;
-    grid-column-end: 1;
+	grid-column-end: 1;
 }
 
-.title{
+.title {
 	grid-column-start: 2;
-    grid-column-end: 2;
+	grid-column-end: 2;
 }
 
-.info{
+.info {
 	grid-column-start: 3;
-    grid-column-end: 3;
+	grid-column-end: 3;
 }
-
-/* Page Content */
-</style>
-</head>
-<body>
-
-<div class="header">
-
-	<div class="logo">
-    <a href="https://kgrady689.github.io/index/Web115/GreatDistance/home.htm" target="_self" style="text-decoration:none">&#127956;</a></div>
-    
-    <div class="title">GREAT DISTANCE</div>
-    
-    <div class="info">Get Started</div>
-    
-</div>
