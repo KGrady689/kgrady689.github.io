@@ -20,7 +20,6 @@ p {
 }
 	
 ul.taskbar {
-	float: left;
 	list-style-type: none;
 	overflow: hidden;
 	font-family: Courier New, Courier, monospace;
