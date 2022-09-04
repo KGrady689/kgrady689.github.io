@@ -4,6 +4,7 @@ Great Distance Homepage
 */
 
 body {
+	background-color: black;
 	text-align: center;
 }
 
@@ -16,12 +17,13 @@ body {
 	color: white;
 	font-size: 25px;
 	display: inline-grid;
-	grid-template-columns: 6;
+	grid-template-columns: 4;
 	grid-template-rows: 1;
 	grid-column-gap: 25px;
 }
 
 h1 {
+	padding: 50px;
 	color: black;
 	font-family: Courier New, Courier, monospace;
 	font-size: 50px;
@@ -52,24 +54,19 @@ a:hover {
 	grid-column-end: 1;
 }
 
-.title {
+.mission {
 	grid-column-start: 2;
 	grid-column-end: 2;
 }
 
-.mission {
+.designs {
 	grid-column-start: 3;
 	grid-column-end: 3;
 }
 
-.designs {
+.validators {
 	grid-column-start: 4;
 	grid-column-end: 4;
-}
-
-.validators {
-	grid-column-start: 5;
-	grid-column-end: 5;
 }
 
 
