@@ -19,7 +19,7 @@ body {
 	display: inline-grid;
 	grid-template-columns: 4;
 	grid-template-rows: 1;
-	grid-column-gap: 50px;
+	grid-column-gap: 25px;
 }
 
 h1 {
