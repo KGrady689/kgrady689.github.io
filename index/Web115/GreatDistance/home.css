@@ -8,30 +8,9 @@ body {
 	text-align: center;
 }
 
-.header {
-	font-family: Courier New, Courier, monospace;
-	padding-left: 30px;
-	padding-right: 30px;
-	text-align: center;
-	background: #bf8040;
-	color: white;
-	font-size: 25px;
-	display: inline-grid;
-	grid-template-columns: 4;
-	grid-template-rows: 1;
-	grid-column-gap: 25px;
-}
-
 h1 {
 	padding: 50px;
 	color: white;
-	font-family: Courier New, Courier, monospace;
-	font-size: 50px;
-}
-
-p {
-	font-family: Tahoma, Verdana, sans-serif;
-}
 
 a:link {
 	color: white; 
@@ -56,6 +35,50 @@ a:hover {
 
 .mission {
 	grid-column-start: 2;
+	font-family: Courier New, Courier, monospace;
+	font-size: 50px;
+}
+
+p {
+	font-family: Tahoma, Verdana, sans-serif;
+}
+
+.header {
+	font-family: Courier New, Courier, monospace;
+	text-align: center;
+	background: #bf8040;
+	color: white;
+	font-size: 25px;
+	display: inline-grid;
+	grid-template-columns: 4;
+	grid-template-rows: 1;
+	grid-column-gap: 30px;
+}
+
+a:link {
+	color: white; 
+}
+
+a:visited {
+	color: white;
+}
+
+a:active {
+	color: white;
+}
+
+a:hover {
+	color: #e6e6e6;
+}
+
+.logo {
+	padding-left: 30px;
+	grid-column-start: 1;
+	grid-column-end: 1;
+}
+
+.mission {
+	grid-column-start: 2;
 	grid-column-end: 2;
 }
 
@@ -67,6 +90,7 @@ a:hover {
 .validators {
 	grid-column-start: 4;
 	grid-column-end: 4;
+	padding-right: 30px;
 }
 
 
