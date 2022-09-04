@@ -16,6 +16,10 @@ Great Distance Homepage
 	grid-column-gap: 25px;
 }
 
+a:hover {
+	color: #e6e6e6;
+}
+
 .logo {
 	grid-column-start: 1;
 	grid-column-end: 1;
@@ -26,7 +30,19 @@ Great Distance Homepage
 	grid-column-end: 2;
 }
 
-.info {
+.mission {
 	grid-column-start: 3;
 	grid-column-end: 3;
 }
+
+.designs {
+	grid-column-start: 4;
+	grid-column-end: 4;
+}
+
+.validators {
+	grid-column-start: 5;
+	grid-column-end: 5;
+}
+
+
