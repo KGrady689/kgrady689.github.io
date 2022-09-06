@@ -37,7 +37,11 @@ img{
 a {
 	text-decortation: none;
 	color: white;
-	
+}
+
+a:visited {
+	text-decortation: none;
+	color: white;
 }
 
 footer {
