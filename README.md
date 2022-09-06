@@ -9,4 +9,4 @@ be posted allow. Let me know if I'm doing this wrong please.
 
 + [Course Contract](https://kgrady689.github.io/index/web115/coursecontract.html)
 
-+ [Great Distance](https://kgrady689.github.io/index/web115/greatdistance/home.htm)
++ [My Brand: Great Distance](https://kgrady689.github.io/index/web115/greatdistance/home.htm)
