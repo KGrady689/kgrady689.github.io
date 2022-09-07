@@ -3,28 +3,31 @@
 body {
   overflow: auto;
   background-color: rgb(168, 227, 219);
-  font-family: "Impact", "Tahoma", "arial";
 }
 
 h1 {
   font-size: xxx-large;
   color: #88592b;
+  font-family: "Courier New", Courier, monospace;
 }
 
 h2 {
   font-size: xx-large;
   text-align: center;
   color: #88592b;
+  font-family: "Courier New", Courier, monospace;
 }
 
 p {
   font-size: x-large;
   color: #88592b;
+  font-family: "Impact", "Tahoma", "arial";
 }
 
 footer {
   text-align: center;
   color: #88592b;
+  font-family: "Courier New", Courier, monospace;
 }
 
 a {
