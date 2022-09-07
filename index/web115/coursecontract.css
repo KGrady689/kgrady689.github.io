@@ -8,21 +8,29 @@ body {
 
 h1 {
   font-size: xxx-large;
+  color: #88592b;
 }
 
 h2 {
   font-size: xx-large;
   text-align: center;
+  color: #88592b;
 }
 
 p {
   font-size: x-large;
+  color: #88592b;
 }
 
 footer {
-  text-align: center
+  text-align: center;
+  color: #88592b;
 }
 
 a {
-  text-decoration: none;
+  color: #88592b;
+}
+
+a:visited {
+  color: #88592b;
 }
