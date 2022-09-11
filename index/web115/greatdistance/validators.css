@@ -30,7 +30,7 @@ p {
 	font-size: 20px;
 }
 
-ul {
+ul.validators {
 	list-style-type: none;
 	font-family: "Courier New", Courier, monospace;
 	padding: 20px;
