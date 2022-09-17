@@ -1,1 +1,44 @@
-k
+@charset "utf-8";
+/*
+SWTL JS (Great Distance)
+*/
+
+body {
+	margin: 0;
+	background-color: #bf8040;
+}
+
+h1 {
+	font-family: "Courier New", Courier, monospace;
+	padding: 50px;
+	color: black;
+	font-size: 50px;
+	text-align: center;
+}
+
+legend {
+	font-family: "Courier New", Courier, monospace;
+	padding: 35px;
+	color: white;
+	font-size: 35px;
+}
+
+p {
+	font-family: Tahoma, Verdana, sans-serif;
+	padding: 20px;
+	color: white;
+	font-size: 20px;
+}
+
+.actualBody {
+  margin: 15px;
+  border-style: groove;
+  background-color: #e6e6e6;
+  color: #bf8040;
+}
+
+button {
+  text-align: center;
+  background-color: #bf8040;
+  color: #e6e6e6;
+}
