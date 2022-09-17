@@ -3,16 +3,15 @@
 */
 
 body {
-	margin: 0;
-	background-color: ;
-	text-align: ;
+	margin: 25px;
+	background-color: #d98cb3;
 }
 
 h1 {
-	font-family: ;
+	font-family: "Courier New", Courier, monospace;
 	padding: px;
-	color: ;
-	font-size: px;
+	color: #ad33ff;
+	font-size: 50px;
 }
 
 p {
@@ -24,17 +23,17 @@ ul.taskbar {
 	margin: 0;
 	list-style-type: none;
 	overflow: hidden;
-	font-family: ;
-	font-size: px;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 30px;
 	text-align: center;
-	background-color: ;
-	color: ;
+	background-color: #ad33ff;
+	color: #d98cb3;
 }
 
 .taskbar a {
-	color: ;
+	color: #d98cb3;
 	text-decoration: none;
-	font-size: ;
+	font-size: 30px;
 }
 
 .taskbar li {
@@ -43,11 +42,41 @@ ul.taskbar {
 }
 
 .taskbar a:hover {
-	background-color: ;
-	color: ;
+	background-color: #d98cb3;
+	color: #ad33ff;
 }
 
 .taskbar a.active {
-	background-color: ;
-	color: ;
+	background-color: #d98cb3;
+	color: #ad33ff;
+}
+
+ul.toc {
+	margin: 0;
+	list-style-type: upper-roman;
+	overflow: auto;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 40px;
+	text-align: center;
+	background-color: #ad33ff;
+	color: #d98cb3;
+}
+
+.toc a {
+	color: #d98cb3;
+	text-decoration: none;
+	font-size: "Courier New", Courier, monospace;
+}
+
+.toc li {
+	float: left;
+	padding: 0 15px;
+}
+
+.toc a:hover {
+	color: grey;
+}
+
+.toc a.active {
+	color: grey;
 }
