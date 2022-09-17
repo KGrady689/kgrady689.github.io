@@ -75,3 +75,32 @@ h1 {
 .toc a.active {
 	color: grey;
 }
+
+.footer {
+	margin: 0;
+	list-style-type: upper-roman;
+	overflow: auto;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 30px;
+	text-align: center;
+	color: #ad33ff;
+}
+
+.footer a {
+	color: #ad33ff;
+	text-decoration: none;
+	font-size: 30px;
+}
+
+.footer li {
+	padding: 15px;
+}
+
+.footer a:hover {
+	color: grey;
+}
+
+.footer a.active {
+	color: grey;
+}
+
