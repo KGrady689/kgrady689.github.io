@@ -9,17 +9,12 @@ body {
 
 h1 {
 	font-family: "Courier New", Courier, monospace;
-	padding: px;
+	padding: 40px;
 	color: #ad33ff;
 	font-size: 50px;
 }
-
-p {
-	font-family: ;
-	font-size: px;
-}
 	
-ul.taskbar {
+.taskbar {
 	margin: 0;
 	list-style-type: none;
 	overflow: hidden;
@@ -51,12 +46,12 @@ ul.taskbar {
 	color: #ad33ff;
 }
 
-ul.toc {
+.toc {
 	margin: 0;
 	list-style-type: upper-roman;
 	overflow: auto;
 	font-family: "Courier New", Courier, monospace;
-	font-size: 40px;
+	font-size: 35px;
 	text-align: center;
 	background-color: #ad33ff;
 	color: #d98cb3;
@@ -65,7 +60,7 @@ ul.toc {
 .toc a {
 	color: #d98cb3;
 	text-decoration: none;
-	font-size: "Courier New", Courier, monospace;
+	font-size: 35px;
 }
 
 .toc li {
