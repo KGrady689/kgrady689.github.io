@@ -76,8 +76,8 @@ h1 {
 	color: grey;
 }
 
-.footer {
-	margin: 0;
+footer {
+	margin: 25px;
 	list-style-type: upper-roman;
 	overflow: auto;
 	font-family: "Courier New", Courier, monospace;
