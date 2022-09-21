@@ -2,6 +2,6 @@
 
 /* SWTL JS (Great Distance */
 
-function greetUser () {
+function greetUser() {
   print('Welcome to the Future, ' + firstName + ' ' + midInt + '. ' + lastName + '.')
 }
