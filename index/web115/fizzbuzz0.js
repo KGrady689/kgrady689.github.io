@@ -3,5 +3,5 @@
 /* SWTL JS (Great Distance */
 
 function greetUser () {
-  time
+  print('Welcome to the Future, ' + firstName + ' ' + midInt + '. ' + lastName + '.')
 }
