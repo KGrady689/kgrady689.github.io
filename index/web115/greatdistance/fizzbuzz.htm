@@ -11,14 +11,6 @@
   Est: 9 20 2022
   -->
   <title>Great Distance Fizzbuzz</title>
-	<script>
-	  var firstName = document.getElementById("firstName").innerHTML;
-	  var firstName = document.getElementById("midIn").innerHTML;
-	  var firstName = document.getElementById("lastName").innerHTML;
-	  function greetUser() {
-  alert('Welcome to the Future, ' + firstName + ' ' + midIn + ' ' + lastName + '.')
-}
-	</script>
   </head>
   
 <body>
@@ -51,6 +43,13 @@
 				<label for="goodWords">Positive Word(s) for Today</label>
 				<textarea id="goodWords" name="goodWords" rows="2" cols="15" placeholder="Try to keep it short, but sweet!" maxlength="30" required></textarea><br><br>
 				<p>Are you ready for the future?</p>
+				<script>
+					var firstName = document.getElementById("firstName").innerHTML;
+					var midIn = document.getElementById("midIn").innerHTML;
+					var lastName = document.getElementById("lastName").innerHTML;
+					function greetUser() {
+						alert('Welcome to the Future, ' + firstName + ' ' + midIn + ' ' + lastName + '.')}
+				</script>
 				<button type="submit" onclick="greetUser()">I am now ready.</button>
 				<button type="reset">I need a redo.</button>
 			</fieldset> 
