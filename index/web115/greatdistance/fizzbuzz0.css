@@ -23,7 +23,7 @@ h2 {
 	font-size: 35px;
 }
 
-label {
+label , p {
 	font-family: Tahoma, Verdana, sans-serif;
 	padding: 20px;
 	color: black;
