@@ -27,6 +27,10 @@ ol {
 	color: white;
 }
 
+li {
+	padding: 10px;
+}
+
 img{
 	display: block;
 	border-style: solid;
