@@ -23,7 +23,7 @@ h2 {
 	font-size: 35px;
 }
 
-p {
+label {
 	font-family: Tahoma, Verdana, sans-serif;
 	padding: 20px;
 	color: black;
@@ -73,7 +73,7 @@ ul.taskbar {
 legend {
 	font-family: "Courier New", Courier, monospace;
 	padding: 35px;
-	color: #bf8040;
+	color: #e6e6e6;
 	font-size: 35px;
 }
 
@@ -84,7 +84,7 @@ textarea {
 .actualBody {
   margin: 100px;
   border-style: groove;
-  background-color: #bf8040#e6e6e6;
+  background-color: #bf8040;
   color: #e6e6e6;
 }
 
