@@ -73,7 +73,7 @@ ul.taskbar {
 legend {
 	font-family: "Courier New", Courier, monospace;
 	padding: 35px;
-	color: #e6e6e6;
+	color: #bf8040;
 	font-size: 35px;
 }
 
@@ -84,12 +84,12 @@ textarea {
 .actualBody {
   margin: 100px;
   border-style: groove;
-  background-color: #e6e6e6;
-  color: #bf8040;
+  background-color: #bf8040#e6e6e6;
+  color: #e6e6e6;
 }
 
 button {
   text-align: center;
-  background-color: #bf8040;
-  color: #e6e6e6;
+  background-color: #e6e6e6;
+  color: #bf8040;
 }
