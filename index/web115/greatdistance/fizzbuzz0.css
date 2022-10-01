@@ -30,6 +30,10 @@ label , p {
 	font-size: 20px;
 }
 
+textarea {
+    width: 5px;
+}
+
 ul.validators {
 	list-style-type: none;
 	font-family: "Courier New", Courier, monospace;
