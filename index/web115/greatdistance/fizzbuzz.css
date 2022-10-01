@@ -30,10 +30,6 @@ label , p {
 	font-size: 20px;
 }
 
-textarea {
-    width: 5px;
-}
-
 ul.validators {
 	list-style-type: none;
 	font-family: "Courier New", Courier, monospace;
@@ -79,6 +75,10 @@ legend {
 	padding: 35px;
 	color: #e6e6e6;
 	font-size: 35px;
+}
+
+input#midIn {
+	width: 10px
 }
 
 textarea {
