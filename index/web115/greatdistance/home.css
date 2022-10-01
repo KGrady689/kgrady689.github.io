@@ -66,4 +66,9 @@ footer {
   text-align: center
 }
 
+a:visited {
+	text-decoration: none;
+	color: white;
+}
+
 
