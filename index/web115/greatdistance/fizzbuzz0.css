@@ -5,7 +5,7 @@ Great Distance FizzBuzz 0
 
 body {
 	margin: 0;
-	background-color: #bf8040;
+	background-color: #e6e6e6;
 }
 
 h1 {
@@ -16,18 +16,57 @@ h1 {
 	text-align: center;
 }
 
-legend {
+h2 {
 	font-family: "Courier New", Courier, monospace;
 	padding: 35px;
-	color: #e6e6e6;
+	color: black;
 	font-size: 35px;
 }
 
 p {
 	font-family: Tahoma, Verdana, sans-serif;
 	padding: 20px;
-	color: #e6e6e6;
+	color: black;
 	font-size: 20px;
+}
+	
+ul.taskbar {
+	margin: 0;
+	list-style-type: none;
+	overflow: hidden;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 40px;
+	text-align: center;
+	background-color: #bf8040;
+	color: white;
+}
+
+.taskbar a {
+	color: white;
+	text-decoration: none;
+	font-size: 25px;
+}
+
+.taskbar li {
+	float: left;
+	padding: 0 15px;
+}
+
+.taskbar a:hover {
+	background-color: #e6e6e6;
+	color: #bf8040;
+}
+
+.taskbar a.active {
+	background-color: #e6e6e6;
+	color: #bf8040;
+}
+
+legend {
+	font-family: "Courier New", Courier, monospace;
+	padding: 35px;
+	color: #e6e6e6;
+	font-size: 35px;
 }
 
 textarea {
