@@ -10,7 +10,14 @@
   Creator: Kwaseem Grady
   Est: 9 20 2022
   -->
-  <script src="fizzbuzz.js"></script>
+	<script>
+		function greetUser() {
+			var firstName = document.getElementById("firstName").value; 
+			var midIn = document.getElementById("midIn").value; 
+			var lastName = document.getElementById("lastName").value;
+			alert("Greetings, " + firstName + " " + midIn + ". " + lastName + ".");
+		}
+	</script>
   <title>Great Distance Fizzbuzz</title>
   </head>
   
@@ -45,10 +52,15 @@
 				<label for="goodWords">Positive Word(s) for Today</label>
 				<textarea id="goodWords" name="goodWords" rows="2" cols="15" placeholder="Try to keep it short, but sweet!" maxlength="30" required></textarea><br><br>
 				<p>Are you ready for the future?</p>
-				<button type="button" onclick="greetUser()">I am now ready.</button>
+				<button type="button" onclick="greetUser();changeHead();">I am now ready.</button>
 				<button type="reset">I need a redo.</button>
 			</fieldset> 
 		</form>
 	</div>
+	<script>
+		function changeHead() {
+			document.getElementById("joinUs").innerHTMl = "Welcome to the Great Distance Family, " + firstName + "!";
+		}
+	</script>
 	</body>
 </html>
