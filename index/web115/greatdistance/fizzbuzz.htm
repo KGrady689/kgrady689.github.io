@@ -18,7 +18,7 @@
 			alert("Greetings, " + firstName + " " + midIn + ". " + lastName + ".");
 			var userNum = prompt("How many years into the future do you want to go, " + firstName + "?");
 			for (var currentNum = 0; currentNum <= userNum; currentNum++) {
-				document.getElementById("countUp").innerHTML = userNum + "). ";
+				document.getElementById("countUp").innerHTML = currentNum + "). " + "<br> " + "<br>";
 			}
 		}
 	</script>
@@ -60,8 +60,8 @@
 				<button type="reset">I need a redo.</button>
 			</fieldset> 
 		</form>
+		<p id="countUp"></p>
 	</div>
-	<p id="countUp"><p>
 	<script>
 		function changeHead() {
 			var firstName = document.getElementById("firstName").value;
