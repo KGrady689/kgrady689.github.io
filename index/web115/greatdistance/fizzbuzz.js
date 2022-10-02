@@ -1,4 +1,3 @@
-"use strict"
 
 /* SWTL JS (Great Distance */
 
