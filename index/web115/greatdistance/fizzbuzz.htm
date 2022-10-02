@@ -19,6 +19,11 @@
 			var userNum = prompt("How many years into the future do you want to go, " + firstName + "?");
 			for (var currentNum = 1; currentNum < userNum; currentNum++) {
 				document.getElementById("countUp").innerHTML += currentNum + "). " + "<br> " + "<br>";
+				If (userNum % 2 == 0) {
+					document.getElementById("countUp").innerHTML += currentNum + "). " + "Your number is Even!" +  "<br> " + "<br>";
+				} else {
+					document.getElementById("countUp").innerHTML += currentNum + "). " + "Your number is Odd!" +  "<br> " + "<br>";
+				}
 			}
 		}
 	</script>
