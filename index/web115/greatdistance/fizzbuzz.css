@@ -97,3 +97,35 @@ button {
   background-color: #e6e6e6;
   color: #bf8040;
 }
+
+ul.taskbar {
+	margin: 0;
+	list-style-type: none;
+	overflow: hidden;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 40px;
+	text-align: center;
+	background-color: #bf8040;
+	color: white;
+}
+
+.taskbar-fizz a {
+	color: white;
+	text-decoration: none;
+	font-size: 25px;
+}
+
+.taskbar-fizz li {
+	float: left;
+	padding: 0 15px;
+}
+
+.taskbar-fizz a:hover {
+	background-color: #e6e6e6;
+	color: #bf8040;
+}
+
+.taskbar-fizz a.active {
+	background-color: #e6e6e6;
+	color: #bf8040;
+}
