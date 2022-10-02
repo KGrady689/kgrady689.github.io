@@ -7,6 +7,6 @@ function greetUser() {
   var lastName = document.getElementById("lastName").value;
   alert("Greetings, " + firstName + " " + midIn + ". " + lastName + ".");
   
-  var joinUs = document.getElementById("joinUs").innerHTMl;
+  var joinUs = document.getElementById("joinUs").innerHTML;
   joinUs.textContent = "Welcome to the Great Distance Family, " + firstName + "!";
 }
