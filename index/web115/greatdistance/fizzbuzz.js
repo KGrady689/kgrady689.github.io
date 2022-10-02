@@ -3,5 +3,9 @@
 /* SWTL JS (Great Distance */
 
 function greetUser() {
-  console.log('Welcome to the Future, ' + document.getElementById("firstName") + ' ' + document.getElementById("midIn") + '. ' + document.getElementById("lastName") + '.')
+  var firstName = document.getElementById("firstName").innerHTML; 
+  var midIn = document.getElementById("midIn").innerHTML; 
+  var lastName = document.getElementById("lastName").innerHTML; 
+  
+  alert("Welcome to the future, " + firstName + " " + midIn + ". " + lastName + ".")
 }
