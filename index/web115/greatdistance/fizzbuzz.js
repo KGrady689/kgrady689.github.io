@@ -1,5 +1,5 @@
 
-/* SWTL JS (Great Distance */
+/* SWTL JS (Great Distance) */
 
 function greetUser() {
   var firstName = document.getElementById("firstName").innerHTML; 
