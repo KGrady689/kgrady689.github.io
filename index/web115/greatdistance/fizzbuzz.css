@@ -103,7 +103,7 @@ ul.taskbar-fizz {
 	list-style-type: none;
 	overflow: hidden;
 	font-family: "Courier New", Courier, monospace;
-	font-size: 40px;
+	font-size: 30px;
 	text-align: center;
 	background-color: #bf8040;
 	color: white;
@@ -115,12 +115,12 @@ ul.taskbar-fizz {
 .taskbar-fizz a {
 	color: white;
 	text-decoration: none;
-	font-size: 25px;
+	font-size: 20px;
 }
 
 .taskbar-fizz li {
 	float: left;
-	padding: 0 15px;
+	padding: 0 10px;
 }
 
 .taskbar-fizz a:hover {
