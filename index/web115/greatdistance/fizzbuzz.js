@@ -7,5 +7,5 @@ function greetUser() {
   var midIn = document.getElementById("midIn").innerHTML; 
   var lastName = document.getElementById("lastName").innerHTML; 
   
-  alert("Welcome to the future, " + firstName + " " + midIn + ". " + lastName + ".")
+  alert("Greetings, " + firstName + " " + midIn + ". " + lastName + ".")
 }
