@@ -1,0 +1,80 @@
+
+<!doctype html>
+<html lang="en">
+  
+<head>
+  <meta charset="utf-8">
+  <link href="fizzbuzz.css" rel="stylesheet" media="all">
+  <!--
+  FizzBuzz
+  Creator: Kwaseem Grady
+  Est: 9 20 2022
+  -->
+	<script>
+		function greetUser() {
+			var firstName = document.getElementById("firstName").value; 
+			var midIn = document.getElementById("midIn").value; 
+			var lastName = document.getElementById("lastName").value;
+			alert("Greetings, " + firstName + " " + midIn + ". " + lastName + ".");
+			var userNum = prompt("How many years into the future do you want to go, " + firstName + "?");
+			for (var currentNum = 1; currentNum <= userNum; currentNum++) {
+				if (currentNum % 2 == 0) {
+					document.getElementById("countUp").innerHTML += currentNum + "). " + "Welcome Aboard - Your number is Even!" +  "<br> " + "<br>";
+				} else {
+					document.getElementById("countUp").innerHTML += currentNum + "). " + "Welcome Aboard - Your number is Odd!" +  "<br> " + "<br>";
+				}
+			}
+		}
+	</script>
+  <title>Great Distance Fizzbuzz 0</title>
+  </head>
+  
+<body>
+<!-- Taskbar -->
+	<ul class="taskbar">
+		<li><a href="https://kgrady689.github.io/index/web115/greatdistance/home.htm" target="_self" style="text-decoration:none">&#127956;</a></li>
+		<li>GREAT DISTANCE</li>
+		<li><a href="https://kgrady689.github.io/index/web115/greatdistance/mission.htm" target="_self" style="text-decoration:none">Our Mission</a></li>
+		<li><a href="https://kgrady689.github.io/index/web115/greatdistance/designs.htm" target="_self" style="text-decoration:none">Fonts/Colors Used</a></li>
+		<li><a href="https://kgrady689.github.io/index/web115/greatdistance/validators.htm" target="_self" style="text-decoration:none">Code Validators</a></li>
+		<li><a href="https://kgrady689.github.io/index/web115/greatdistance/fizzbuzz0.htm" target="_self" style="text-decoration:none">FizzBuzz</a></li>
+	</ul>
+	<ul class="taskbar-fizz">
+		<li><a href="https://kgrady689.github.io/index/web115/greatdistance/fizzbuzz0.htm" target="_self" style="text-decoration:none">FizzBuzz 0</a></li>
+		<li><a href="https://kgrady689.github.io/index/web115/greatdistance/fizzbuzz1.htm" target="_self" style="text-decoration:none">FizzBuzz 1</a></li>
+	</ul>
+  
+  <h1>FizzBuzz 0</h1>
+	<h2 id="joinUs">Join the Great Distance Family!</h2>
+	<div class="actualBody">
+		<form action="" method="get">
+			<fieldset for="welcomePage">
+				<legend>&#127956; GREAT DISTANCE FizzBuzz 0 &#127956;</legend>
+				<label for="firstName">First Name: </label>
+				<input type="text" id="firstName" name="firstName" placeholder="First Name" maxlength="20" required><br><br>
+				<label for="midIn">Middle Initial: </label>
+				<input type="text" id="midIn" name="midIn" maxlength="1" required><br><br>
+				<label for="lastName">Last Name: </label>
+				<input type="text" id="lastName" name="lastName" placeholder="Last Name" maxlength="20" required><br><br>
+				<p>Rate your creativeness. This rating can be in any area, but you don't need to specify.</p>
+				<label for="creativeRate">Your Creativity Rating: </label>
+				<select name="creativeRate" id="creativeRate" placeholder="0" required>
+					<option value="1">1 &#128336;</option>
+				</select><br><br>
+				<label for="goodWords">Positive Word(s) for Today</label>
+				<textarea id="goodWords" name="goodWords" rows="2" cols="15" placeholder="Try to keep it short, but sweet!" maxlength="30" required></textarea><br><br>
+				<p>Are you ready for the future?</p>
+				<button type="button" onclick="greetUser();changeHead();">I am now ready.</button>
+				<button type="reset">I need a redo.</button>
+			</fieldset> 
+		</form>
+		<p id="countUp"></p>
+	</div>
+	<script>
+		function changeHead() {
+			var firstName = document.getElementById("firstName").value;
+			document.getElementById("joinUs").innerHTML = "Welcome to the Great Distance Family, " + firstName + "!";
+		}	
+	</script>
+	</body>
+</html>
