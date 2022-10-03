@@ -14,11 +14,11 @@
 		function greetUser() {
 			for (var currentNum = 1; currentNum <= 140; currentNum++) {
 				if (currentNum % 3 == 0 && currentNum % 5 = 0) {
-					document.getElementById("countUp").innerHTML += currentNum + "). " + "Super Eureka!" +  "<br> " + "<br>";
+					document.getElementById("countUp").innerHTML += currentNum + "). " + "Super Eureka!" + "<br> " + "<br>";
 				} else if (currentNum % 3 == 0) {
-					document.getElementById("countUp").innerHTML += currentNum + "). " + "Eureka!" +  "<br> " + "<br>";
+					document.getElementById("countUp").innerHTML += currentNum + "). " + "Eureka!" + "<br> " + "<br>";
 				} else {
-					document.getElementById("countUp").innerHTML += currentNum + "). " + "Think..." +  "<br> " + "<br>";
+					document.getElementById("countUp").innerHTML += currentNum + "). " + "Think..." + "<br> " + "<br>";
 				}
 			}
 		}
@@ -26,7 +26,7 @@
   <title>Great Distance Fizzbuzz 1</title>
   </head>
   
-<body onload="greetUser()">
+<body>
 <!-- Taskbar -->
 	<ul class="taskbar">
 		<li><a href="https://kgrady689.github.io/index/web115/greatdistance/home.htm" target="_self" style="text-decoration:none">&#127956;</a></li>
@@ -43,8 +43,10 @@
   
   <h1>FizzBuzz 1</h1>
 	<div class="actualBody">
-		<h2>&#127956; GREAT FizzBuzz 1 &#127956;</h2>
-		<p id="countUp"></p>
+		<h2>&#127956; GREAT DISTANCE FizzBuzz 1 &#127956;</h2>
+		<p id="countUp">
+			<button type="button">THINK</button>
+		</p>
 	</div>
 	</body>
 </html>
