@@ -20,3 +20,11 @@ function askNumber() {
   var joinUs = document.getElementById("joinUs").innerHTML;
   joinUs.textContent = "Welcome to the Great Distance Family, " + firstName + "!";
 }
+	
+if (currentNum % 3 == 0 && currentNum % 5 = 0) {
+					document.getElementById("countUp").innerHTML += currentNum + "). " + "Super Eureka!" + "<br> " + "<br>";
+				} else if (currentNum % 3 == 0) {
+					document.getElementById("countUp").innerHTML += currentNum + "). " + "Eureka!" + "<br> " + "<br>";
+				} else {
+					document.getElementById("countUp").innerHTML += currentNum + "). " + "Think..." + "<br> " + "<br>";
+				}
