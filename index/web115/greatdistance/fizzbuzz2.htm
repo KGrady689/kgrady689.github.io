@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <link href="fizzbuzz.css" rel="stylesheet" media="all">
   <!--
-  FizzBuzz 1
+  FizzBuzz 2
   Creator: Kwaseem Grady
-  Est: 10 02 2022
+  Est: 10 08 2022
   -->
 	<script>
 		function greetUser() {
@@ -27,7 +27,7 @@
 			}
 		}
 	</script>
-  <title>Great Distance Fizzbuzz 1</title>
+  <title>Great Distance Fizzbuzz 2</title>
   </head>
   
 <body>
@@ -43,13 +43,19 @@
 	<ul class="taskbar-fizz">
 		<li><a href="https://kgrady689.github.io/index/web115/greatdistance/fizzbuzz0.htm" target="_self" style="text-decoration:none">FizzBuzz 0</a></li>
 		<li><a href="https://kgrady689.github.io/index/web115/greatdistance/fizzbuzz1.htm" target="_self" style="text-decoration:none">FizzBuzz 1</a></li>
+		<li><a href="https://kgrady689.github.io/index/web115/greatdistance/fizzbuzz2.htm" target="_self" style="text-decoration:none">FizzBuzz 2</a></li>
 	</ul>
   
-  <h1>FizzBuzz 1</h1>
+  <h1>FizzBuzz 2</h1>
 	<div class="actualBody">
-		<h2>&#127956; GREAT DISTANCE FizzBuzz 1 &#127956;</h2>
+		<h2>&#127956; GREAT DISTANCE FizzBuzz 2 &#127956;</h2>
 		<p id="countUp">
-			<button type="button" onclick="greetUser()">THINK</button><br>
+			<label for="firstNum">First Number:</label>
+			<input type="text" id="firstNum" name="firstNum" required><br><br>
+			<label for="secondNum">Second Number:</label>
+			<input type="text" id="secondNum" name="secondNum" required><br><br>
+		<div>Is your First Number divisible by your Second Number?</div>
+			<button type="button" onclick="showAnswer()">Only One Way to Find Out</button><br>
 		</p>
 	</div>
 	</body>
