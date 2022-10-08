@@ -11,6 +11,8 @@
   -->
 	<script>
 		function divideNums() {
+			var firstNum = document.getElementById("firstNum").value;
+			var secondNum = document.getElementById("secondNum").value;
 			if (firstNum % secondNum == 0) {
 				document.getElementById("showAnswers").innerHTML += firstNum + " is divisble by " + secondNum + "<br> " + "<br>";
 			} else {
@@ -48,7 +50,9 @@
 		<div>Is your First Number divisible by your Second Number?</div>
 			<button type="button" onclick="divideNums()">Only One Way to Find Out</button><br>
 		</p>
-		<p id="showAnswers"><p>
+		<p id="showAnswers">
+			 <button type="reset">Clear up the Mess</button>
+		<p>
 	</div>
 	</body>
 </html>
