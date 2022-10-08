@@ -10,20 +10,11 @@
   Est: 10 08 2022
   -->
 	<script>
-		function greetUser() {
-			for (var currentNum = 1; currentNum <= 140; currentNum++) {
-				if (currentNum % 3 == 0 && currentNum % 5 == 0) {
-					document.getElementById("countUp").innerHTML += currentNum + "). " + "Think... Eureka!" + "<br> " + "<br>";
-				} 
-				else if (currentNum % 5 == 0) {
-					document.getElementById("countUp").innerHTML += currentNum + "). " + "Eureka!" + "<br> " + "<br>";
-				}
-				else if (currentNum % 3 == 0) {
-					document.getElementById("countUp").innerHTML += currentNum + "). " + "Think..." + "<br> " + "<br>";
-				}
-				else {
-					document.getElementById("countUp").innerHTML += currentNum + "). " + "Hmm..." + "<br> " + "<br>";
-				}
+		function divideNums() {
+			if (firstNum % secondNum == 0) {
+				document.getElementById("showAnswers").innerHTML += firstNum + " is divisble by " + secondNum + "<br> " + "<br>";
+			} else {
+				document.getElementById("showAnswers").innerHTML += firstNum + " is NOT divisble by " + secondNum + "<br> " + "<br>";
 			}
 		}
 	</script>
@@ -49,14 +40,15 @@
   <h1>FizzBuzz 2</h1>
 	<div class="actualBody">
 		<h2>&#127956; GREAT DISTANCE FizzBuzz 2 &#127956;</h2>
-		<p id="countUp">
+		<p>
 			<label for="firstNum">First Number:</label>
 			<input type="text" id="firstNum" name="firstNum" required><br><br>
 			<label for="secondNum">Second Number:</label>
 			<input type="text" id="secondNum" name="secondNum" required><br><br>
 		<div>Is your First Number divisible by your Second Number?</div>
-			<button type="button" onclick="showAnswer()">Only One Way to Find Out</button><br>
+			<button type="button" onclick="divideNums()">Only One Way to Find Out</button><br>
 		</p>
+		<p id="showAnswers"><p>
 	</div>
 	</body>
 </html>
