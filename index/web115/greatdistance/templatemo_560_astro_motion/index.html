@@ -18,6 +18,15 @@ https://templatemo.com/tm-560-astro-motion
 -->
 </head>
 <body>
+    <script>
+        prompt("Please enter your First Name.", "First Name")
+		function greetUser() {
+			let firstName = prompt("Please enter your First Name.") 
+			let lastName = prompt("Please enter your Last Name.", "Last Name")
+			alert("Greetings, " + firstName + " " + ". " + lastName + ".");
+            document.getElementById("greetUser").innerHTML = "Welcome to the Great Distance Family, " + firstName + ".";
+        }
+    </script>
     <video autoplay muted loop id="bg-video">
         <source src="video/gfp-astro-timelapse.mp4" type="video/mp4">
     </video>
@@ -62,7 +71,7 @@ https://templatemo.com/tm-560-astro-motion
             <div class="page-width-1 page-left">
               <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container">
                 <div class="intro-left tm-bg-dark">
-                  <h2 class="mb-4">Welcome to Great Distance</h2>
+                  <h2 class="greetUser"></h2>
                   <p class="mb-4">
                     This HTML template has a motion video background loop which is provided by <a rel="sponsored" href="https://getfreepictures.com" target="_blank">Get Free Pictures</a>. This is
                     one-page responsive layout for your websites. Feel
