@@ -22,7 +22,7 @@ https://templatemo.com/tm-560-astro-motion
 		function greetUser() {
 			let firstName = prompt("Please enter your First Name.") 
 			let lastName = prompt("Please enter your Last Name.", "Last Name")
-			alert("Greetings, " + firstName + " " +  " " + lastName + ".");
+			alert("Greetings, " + firstName + " " + lastName + ".");
             document.getElementById("greetUser").innerHTML = "Welcome to the Great Distance Family, " + firstName + ".";
 	    document.getElementById("emailName").innerHTML = firstName + lastName;
         }
@@ -215,7 +215,7 @@ https://templatemo.com/tm-560-astro-motion
                 <div class="col-md-6 tm-contact-left">
                   <form action="#" method="POST" class="contact-form">
                     <div class="input-group tm-mb-30">
-                        <input name="name" type="text" class="form-control rounded-0 border-top-0 border-end-0 border-start-0" placeholder="Name">
+                        <input id="emailName" name="name" type="text" class="form-control rounded-0 border-top-0 border-end-0 border-start-0" placeholder="Name">
                     </div>
                     <div class="input-group tm-mb-30">
                         <input name="email" type="text" class="form-control rounded-0 border-top-0 border-end-0 border-start-0" placeholder="Email">
