@@ -28,7 +28,7 @@ https://templatemo.com/tm-560-astro-motion
 			}  else if (firstName !== null && lastName === null) {
 				alert("Greetings, " + firstName + ".");
 				document.getElementById("greetUser").innerHTML = "Welcome to the Great Distance Family, " + firstName + ".";
-			} else if (firstName === null && lastName !== null) {
+			} else if (lastName !== null && firstName === null) {
 				alert("Greetings, " + lastName + ".");
 				document.getElementById("greetUser").innerHTML = "Welcome to the Great Distance Family, " + lastName + ".";
 			} else {
