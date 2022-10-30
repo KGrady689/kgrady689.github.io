@@ -25,7 +25,7 @@ https://templatemo.com/tm-560-astro-motion
 			if (firstName === null && lastName === null) {
 				alert("Greetings.");
 				document.getElementById("greetUser").innerHTML = "Welcome to the Great Distance Family.";
-			} else if (firstName !== null && lastName === null) {
+			}  else if (firstName !== null && lastName === null) {
 				alert("Greetings, " + firstName + ".");
 				document.getElementById("greetUser").innerHTML = "Welcome to the Great Distance Family, " + firstName + ".";
 			} else if (firstName === null && lastName !== null) {
@@ -34,7 +34,8 @@ https://templatemo.com/tm-560-astro-motion
 			} else {
 			alert("Greetings, " + firstName + " " + lastName + ".");
             document.getElementById("greetUser").innerHTML = "Welcome to the Great Distance Family, " + firstName + ".";
-        }
+			}
+		}
     </script>
     <video autoplay muted loop id="bg-video">
         <source src="media/gfp-astro-timelapse.mp4" type="video/mp4">
