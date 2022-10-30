@@ -22,16 +22,16 @@ https://templatemo.com/tm-560-astro-motion
 		function greetUser() {
 			let firstName = prompt("Please enter your First Name.") 
 			let lastName = prompt("Please enter your Last Name.")
-			if (firstName === null && lastName === null) {
+			if (firstName == null && lastName == null) {
 				alert("Greetings.");
 				document.getElementById("greetUser").innerHTML = "Welcome to the Great Distance Family.";
-			}  else if (firstName !== null && lastName === null) {
+			}  else if (firstName != null && lastName == null) {
 				alert("Greetings, " + firstName + ".");
 				document.getElementById("greetUser").innerHTML = "Welcome to the Great Distance Family, " + firstName + ".";
-			} else if (lastName !== null && firstName === null) {
+			} else if (lastName != null && firstName == null) {
 				alert("Greetings, Mr./Ms. " + lastName + ".");
 				document.getElementById("greetUser").innerHTML = "Welcome to the Great Distance Family, Mr./Ms. " + lastName + ".";
-			} else if (firstName !== null && lastName !== null) {
+			} else if (firstName != null && lastName == null) {
 			alert("Greetings, " + firstName + " " + lastName + ".");
             document.getElementById("greetUser").innerHTML = "Welcome to the Great Distance Family, " + firstName + ".";
 			}
