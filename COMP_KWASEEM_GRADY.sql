@@ -1,5 +1,6 @@
-#REM CREATE DATABASE IF NOT EXISTS COMP_KWASEEM_GRADY;
-#REM USE company_aa;
+CREATE DATABASE if not exists COMP_KWASEEM_GRADY;
+USE COMP_KWASEEM_GRADY;
+SELECT current_user(), now(), database();
 
 /*Drop tables if they exist*/
 SET FOREIGN_KEY_CHECKS = 0;
@@ -120,7 +121,8 @@ VALUES	('999666666', 'Bordoloi', 'Bijoy', NULL, 'South Main #12', 'Edwardsville'
 	('999222222', 'Amin', 'Hyder', NULL, 'S. Seaside Apt. B', 'Marina', 'CA', 93941, ('1969-03-29'), 25000, 422, 'M', 3, '999555555'), 
 	('999111111', 'Bock', 'Douglas', 'B', '#2 Mont Verd Dr.', 'St. Louis', 'MO', 63121, ('1950-12-05'), 30000, 542, 'M', 7, '999444444'), 
 	('999333333', 'Joshi', 'Dinesh', NULL, '#10 Oak St.', 'Collinsville', 'IL', 66234, ('1972-09-15'), 38000, 332, 'M', 7, '999444444'), 
-	('999888888', 'Prescott', 'Sherri','C', 'Overton Way #4', 'Edwardsville', 'IL', 62025, ('1972-07-31'), 25000, 296, 'F', 7, '999444444'); 
+	('999888888', 'Prescott', 'Sherri','C', 'Overton Way #4', 'Edwardsville', 'IL', 62025, ('1972-07-31'), 25000, 296, 'F', 7, '999444444'), 
+    ('123456789', 'Grady', 'Kwaseem', NULL, '123 Sesame Street', 'Concord', 'NC', 28027, ('2345-12-23'), 50000, 689, 'M', 1, NULL );
 
 /* Assignment rows. */
 INSERT INTO assignment (work_emp_ssn, work_pro_num, work_hours, work_hours_planned)
@@ -205,6 +207,26 @@ SELECT * FROM employee;
 SELECT * FROM assignment;
 SELECT * FROM dependent;
 SELECT * FROM equipment;
+
+SELECT dpt_name as "Department", CONCAT(emp_first_name, " ", emp_last_name) as "Employee", COUNT(dep_emp_ssn) as "# of Dependents"
+FROM dependent, department, employee
+WHERE dpt_no = emp_dpt_num AND emp_ssn = dep_emp_ssn
+GROUP BY emp_ssn
+ORDER BY COUNT(dep_emp_ssn) ASC;
+
+SELECT CONCAT(pro_num, " - ", pro_name) as "Project", SUM(work_hours) as "Total Hours"
+FROM project, assignment
+WHERE work_pro_num = pro_num
+GROUP BY pro_num
+ORDER BY SUM(work_hours) ASC;
+
+SELECT CONCAT(dpt_no, " ", dpt_name) as "Department", CONCAT(emp_first_name, " ", emp_last_name) as "Manager", CONCAT(emp_first_name, " ", emp_last_name) as "Employee Supervised"
+FROM department, employee
+WHERE dpt_no = emp_dpt_num AND emp_ssn IN ('999444444', '999555555', '999666666');
+
+SELECT CONCAT(dpt_no, " ", dpt_name) as "Employee SSN", as "Dependent Name", CONCAT(emp_first_name, " ", emp_last_name) as "Employee Supervised"
+FROM department, employee, dependent
+WHERE dep_relationship LIKE "%SON%" OR dep_relationship LIKE "%DAUGHTER%";
 
 COMMIT;
 
