@@ -1,3 +1,5 @@
+/* DBA120 Final Project. Kwaseem Grady. 11-2-2022. */
+
 CREATE DATABASE if not exists COMP_KWASEEM_GRADY;
 USE COMP_KWASEEM_GRADY;
 SELECT current_user(), now(), database();
@@ -121,7 +123,8 @@ VALUES	('999666666', 'Bordoloi', 'Bijoy', NULL, 'South Main #12', 'Edwardsville'
 	('999222222', 'Amin', 'Hyder', NULL, 'S. Seaside Apt. B', 'Marina', 'CA', 93941, ('1969-03-29'), 25000, 422, 'M', 3, '999555555'), 
 	('999111111', 'Bock', 'Douglas', 'B', '#2 Mont Verd Dr.', 'St. Louis', 'MO', 63121, ('1950-12-05'), 30000, 542, 'M', 7, '999444444'), 
 	('999333333', 'Joshi', 'Dinesh', NULL, '#10 Oak St.', 'Collinsville', 'IL', 66234, ('1972-09-15'), 38000, 332, 'M', 7, '999444444'), 
-	('999888888', 'Prescott', 'Sherri','C', 'Overton Way #4', 'Edwardsville', 'IL', 62025, ('1972-07-31'), 25000, 296, 'F', 7, '999444444'), 
+	('999888888', 'Prescott', 'Sherri','C', 'Overton Way #4', 'Edwardsville', 'IL', 62025, ('1972-07-31'), 25000, 296, 'F', 7, '999444444'),
+/* Created Row for Myself */
     ('123456789', 'Grady', 'Kwaseem', NULL, '123 Sesame Street', 'Concord', 'NC', 28027, ('2345-12-23'), 50000, 689, 'M', 1, NULL );
 
 /* Assignment rows. */
@@ -208,8 +211,10 @@ SELECT * FROM assignment;
 SELECT * FROM dependent;
 SELECT * FROM equipment;
 
+/* Display All Employees with SELECT. */
 SELECT * FROM employee;
 
+/* Display All Employees with the total number of Dependents. */
 SELECT dpt_name as "Department", CONCAT(emp_first_name, " ", emp_last_name) as "Employee", COUNT(dep_emp_ssn) as "# of Dependents"
 FROM department, dependent
 RIGHT JOIN employee
@@ -218,18 +223,21 @@ WHERE dpt_no = emp_dpt_num
 GROUP BY emp_ssn
 ORDER BY Department ASC, COUNT(dep_emp_ssn) ASC;
 
-
+/* Display Projects with more than 25 total hours worked. */
 SELECT CONCAT(pro_num, " - ", pro_name) as "Project", SUM(work_hours) as "Total Hours"
 FROM project, assignment
 WHERE work_pro_num = pro_num
 GROUP BY pro_num
 ORDER BY SUM(work_hours) ASC;
 
+/* Display the Department Number, Department Name, the Manager’s first and last name with a space between 
+them, and Employees’ first and last name who are supervised by the Manager of the department. */
 SELECT CONCAT(dpt_no, " ", dpt_name) as "Department", CONCAT(f.emp_first_name, " ", f.emp_last_name) as "Manager", CONCAT(s.emp_first_name, " ", s.emp_last_name) as "Employee Supervised"
 FROM department, employee f, employee s
 WHERE f.emp_ssn = s.emp_superssn AND dpt_no = f.emp_dpt_num
 ORDER BY dpt_no ASC;
 
+/* Display Employee Dependents who are children. */
 SELECT CONCAT(SUBSTRING(dep_emp_ssn, 1, 3), "-", SUBSTRING(dep_emp_ssn, 4, 2), "-", SUBSTRING(dep_emp_ssn, 6, 4)) as "Employee SSN", CONCAT(dep_name) as "Dependent Name", DATE_FORMAT(dep_date_of_birth, "%m %d, %Y") as "Birth Date", dep_relationship as "Relationship"
 FROM dependent
 WHERE (dep_relationship LIKE "%SON%" OR dep_relationship LIKE "%DAUGHTER%")
