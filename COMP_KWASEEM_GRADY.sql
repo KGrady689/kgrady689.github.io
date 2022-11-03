@@ -208,11 +208,16 @@ SELECT * FROM assignment;
 SELECT * FROM dependent;
 SELECT * FROM equipment;
 
+SELECT * FROM employee;
+
 SELECT dpt_name as "Department", CONCAT(emp_first_name, " ", emp_last_name) as "Employee", COUNT(dep_emp_ssn) as "# of Dependents"
-FROM dependent, department, employee
-WHERE dpt_no = emp_dpt_num AND emp_ssn = dep_emp_ssn
+FROM department, dependent
+RIGHT JOIN employee
+ON (dep_emp_ssn = emp_ssn)
+WHERE dpt_no = emp_dpt_num
 GROUP BY emp_ssn
-ORDER BY COUNT(dep_emp_ssn) ASC;
+ORDER BY Department ASC, COUNT(dep_emp_ssn) ASC;
+
 
 SELECT CONCAT(pro_num, " - ", pro_name) as "Project", SUM(work_hours) as "Total Hours"
 FROM project, assignment
@@ -220,13 +225,15 @@ WHERE work_pro_num = pro_num
 GROUP BY pro_num
 ORDER BY SUM(work_hours) ASC;
 
-SELECT CONCAT(dpt_no, " ", dpt_name) as "Department", CONCAT(emp_first_name, " ", emp_last_name) as "Manager", CONCAT(emp_first_name, " ", emp_last_name) as "Employee Supervised"
-FROM department, employee
-WHERE dpt_no = emp_dpt_num AND emp_ssn IN ('999444444', '999555555', '999666666');
+SELECT CONCAT(dpt_no, " ", dpt_name) as "Department", CONCAT(f.emp_first_name, " ", f.emp_last_name) as "Manager", CONCAT(s.emp_first_name, " ", s.emp_last_name) as "Employee Supervised"
+FROM department, employee f, employee s
+WHERE f.emp_ssn = s.emp_superssn AND dpt_no = f.emp_dpt_num
+ORDER BY dpt_no ASC;
 
-SELECT CONCAT(dpt_no, " ", dpt_name) as "Employee SSN", as "Dependent Name", CONCAT(emp_first_name, " ", emp_last_name) as "Employee Supervised"
-FROM department, employee, dependent
-WHERE dep_relationship LIKE "%SON%" OR dep_relationship LIKE "%DAUGHTER%";
+SELECT CONCAT(SUBSTRING(dep_emp_ssn, 1, 3), "-", SUBSTRING(dep_emp_ssn, 4, 2), "-", SUBSTRING(dep_emp_ssn, 6, 4)) as "Employee SSN", CONCAT(dep_name) as "Dependent Name", DATE_FORMAT(dep_date_of_birth, "%m %d, %Y") as "Birth Date", dep_relationship as "Relationship"
+FROM dependent
+WHERE (dep_relationship LIKE "%SON%" OR dep_relationship LIKE "%DAUGHTER%")
+ORDER BY dep_emp_ssn ASC, dep_date_of_birth DESC;
 
 COMMIT;
 
