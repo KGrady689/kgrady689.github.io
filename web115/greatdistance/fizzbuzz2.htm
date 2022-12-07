@@ -18,13 +18,13 @@
 					document.getElementById("countUp").innerHTML += currentNum + "). " + "Think... Eureka!" + "<br> " + "<br>";
 				} 
 				else if (currentNum % firstNum == 0) {
-					document.getElementById("countUp").innerHTML += currentNum + "). " + "Eureka!" + "<br> " + "<br>";
+					document.getElementById("showAnswers").innerHTML += currentNum + "). " + "Eureka!" + "<br> " + "<br>";
 				}
 				else if (currentNum % secondNum == 0) {
-					document.getElementById("countUp").innerHTML += currentNum + "). " + "Think..." + "<br> " + "<br>";
+					document.getElementById("showAnswers").innerHTML += currentNum + "). " + "Think..." + "<br> " + "<br>";
 				}
 				else {
-					document.getElementById("countUp").innerHTML += currentNum + "). " + "Hmm..." + "<br> " + "<br>";
+					document.getElementById("showAnswers").innerHTML += currentNum + "). " + "Hmm..." + "<br> " + "<br>";
 				}
 			}
 		}
