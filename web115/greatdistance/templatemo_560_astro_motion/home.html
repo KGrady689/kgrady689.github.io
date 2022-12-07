@@ -20,18 +20,18 @@ https://templatemo.com/tm-560-astro-motion
 <body onload="greetUser()">
 	<script>
 		function greetUser() {
-			let firstName = prompt("Please enter your First Name.", null) 
-			let lastName = prompt("Please enter your Last Name.", null)
-			if (firstName == null && lastName == null) {
+			let firstName = prompt("Please enter your First Name.") 
+			let lastName = prompt("Please enter your Last Name.")
+			if (firstName == "" && lastName == "") {
 				alert("Greetings.");
 				document.getElementById("greetUser").innerHTML = "Welcome to the Great Distance Family.";
-			} else if (firstName != null && lastName == null) {
+			} else if (firstName != "" && lastName == "") {
 				alert("Greetings, " + firstName + ".");
 				document.getElementById("greetUser").innerHTML = "Welcome to the Great Distance Family, " + firstName + ".";
-			} else if (firstName == null && lastName != null) {
+			} else if (firstName == "" && lastName != "") {
 				alert("Greetings, Mr./Ms. " + lastName + ".");
 				document.getElementById("greetUser").innerHTML = "Welcome to the Great Distance Family, Mr./Ms. " + lastName + ".";
-			} else if (firstName != null && lastName != null) {
+			} else if (firstName != "" && lastName != "") {
 				alert("Greetings, " + firstName + " " + lastName + ".");
             			document.getElementById("greetUser").innerHTML = "Welcome to the Great Distance Family, " + firstName + ".";
 			}
