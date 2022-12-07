@@ -16,3 +16,5 @@ be posted allow. Let me know if I'm doing this wrong please.
 + [My Brand: Great Distance](https://kgrady689.github.io/index/web115/greatdistance/home.htm)
 
 + [Great Distance: FizzBuzz](https://kgrady689.github.io/index/web115/greatdistance/fizzbuzz0.htm)
+
++ [Great Distance: One Page Sites with JS](https://kgrady689.github.io/web115/greatdistance/templatemo_560_astro_motion/home.html)
