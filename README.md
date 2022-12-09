@@ -5,9 +5,9 @@ Welcome to my Web 115 page! (Sorry if this sucks, I'm new to [Github](https://gi
 All my work will (should) be found here. I'll try my best to keep up with everyone! Links will
 be posted allow. Let me know if I'm doing this wrong please.
 
-+ [Course Contract](https://kgrady689.github.io/web115/intro/coursecontract.html)
++ [Course Contract](https://kgrady689.github.io/web115/greatdistance/coursecontract.htm)
 
-+ [Web 115 Introduction](https://kgrady689.github.io/web115/intro/introduction.html) 
++ [Web 115 Introduction](https://kgrady689.github.io/web115/greatdistance/intro.htm) 
 
 + [Template (HTML)](https://kgrady689.github.io/web115/template.html) 
 
