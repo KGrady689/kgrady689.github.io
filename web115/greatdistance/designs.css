@@ -61,3 +61,12 @@ ul.taskbar {
 	background-color: #e6e6e6;
 	color: #bf8040;
 }
+
+header , footer {
+  text-align: center
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
