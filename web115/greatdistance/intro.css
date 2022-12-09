@@ -30,7 +30,7 @@ p , ol {
 	font-size: 20px;
 }
 
-img {
+.intro {
 	display: block;
 	border-style: solid;
 	border-color: white;
