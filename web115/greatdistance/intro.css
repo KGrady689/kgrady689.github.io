@@ -30,6 +30,13 @@ p , ol {
 	font-size: 20px;
 }
 
+img {
+	display: block;
+	border-style: solid;
+	border-color: white;
+	margin: 25px
+}
+
 ul.main {
 	list-style-type: none;
 	font-family: "Courier New", Courier, monospace;
