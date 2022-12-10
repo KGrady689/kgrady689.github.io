@@ -11,13 +11,6 @@
   -->
 	<script>
 		function greetUser() {
-			let firstNum = prompt("First Number to Divide By:") 
-			let secondNum = prompt("Second Number to Divide By:")
-			let thirdNum = prompt("Third Number to Divide By:") 
-			let firstWord = prompt("Word that shows if " + firstNum + " is a perfect divisor:")
-			let secondWord = prompt("Word that shows if " + secondNum + " is a perfect divisor:")
-			let thirdWord = prompt("Word that shows if " + thirdNum + " is a perfect divisor:") 
-			let noDivWord = prompt("Word that shows if there is no perfect divisor:")
 			for (var currentNum = 1; currentNum <= 140; currentNum++) {
 				if (currentNum % firstNum == 0 && currentNum % secondNum == 0 && currentNum % thirdNum == 0) {
 					document.getElementById("countUp").innerHTML += currentNum + "). " + firstWord + "..." + secondWord + "..." + thirdWord + "<br> " + "<br>";
@@ -77,9 +70,28 @@
 	</header>
 	
 	<div class="actualBody">
-		<h2>&#127956; GREAT DISTANCE FizzBuzz 4 &#127956;</h2>
+		<form>
+			<fieldset>
+				<legend>&#127956; GREAT DISTANCE FizzBuzz 4 &#127956;</legend>
+				<label for="firstNum">First Number to Divide By: </label>
+				<input type="firstNum" id="firstNum" name="firstNum" placeholder="1" maxlength="2" required><br><br>
+				<label for="secondNum">Second Number to Divide By: </label>
+				<input type="secondNum" id="secondNum" name="secondNum" placeholder="2" maxlength="2" required><br><br>
+				<label for="thirdNum">Third Number to Divide By: </label>
+				<input type="thirdNum" id="thirdNum" name="thirdNum" placeholder="3" maxlength="2" required><br><br>
+				<label for="firstWord">"Word that shows if First Number is a perfect divisor:" </label>
+				<input type="firstWord" id="firstWord" name="firstWord" placeholder="Fizz" maxlength="10" required><br><br>
+				<label for="secondWord">"Word that shows if Second Number is a perfect divisor:" </label>
+				<input type="secondWord" id="secondWord" name="secondWord" placeholder="Buzz" maxlength="10" required><br><br>
+				<label for="thirdWord">"Word that shows if First Number is a perfect divisor:" </label>
+				<input type="thirdWord" id="thirdWord" name="thirdWord" placeholder="BANG" maxlength="10" required><br><br>
+				<label for="noDivWord">"Word that shows if there is no perfect divisor:" </label>
+				<input type="noDivWord" id="noDivWord" name="noDivWord" placeholder="Whatever" maxlength="10" required><br><br>
+				<button type="button" onclick="greetUser()">THINK</button><br>
+				<button type="reset">I need a redo.</button>
+			</fieldset> 
+		</form>
 		<p id="countUp">
-			<button type="button" onclick="greetUser()">THINK</button><br>
 		</p>
 	</div>
 	
