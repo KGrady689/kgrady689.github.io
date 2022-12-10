@@ -30,6 +30,27 @@ label , p {
 	font-size: 20px;
 }
 
+p , ol {
+	font-family: Tahoma, Verdana, sans-serif;
+	padding: 20px;
+	color: black;
+	font-size: 20px;
+}
+
+.intro {
+	display: block;
+	border-style: solid;
+	border-color: white;
+	margin: 25px
+}
+
+ul.main {
+	font-family: "Courier New", Courier, monospace;
+	padding: 20px;
+	color: black;
+	font-size: 20px;
+}
+
 ul.validators {
 	list-style-type: none;
 	font-family: "Courier New", Courier, monospace;
