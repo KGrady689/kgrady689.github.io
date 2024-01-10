@@ -1,6 +1,6 @@
 Kwaseem Grady --- Web 215 --- Spring 2024
 
-Welcome to my Web 215 page! (Sorry if this sucks, I'm new to [Github](https://github.com/KGrady689).)
+Welcome to my Web 215 page! (https://github.com/KGrady689)
 
 All my work will (should) be found here. I'll try my best to keep up with everyone! Links will
 be posted allow. Let me know if I'm doing this wrong please.
