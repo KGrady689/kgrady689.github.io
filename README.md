@@ -1,4 +1,4 @@
-Kwaseem Grady --- Web 115 --- Fall 2022
+Kwaseem Grady --- Web 115 --- Spring 2024
 
 Welcome to my Web 115 page! (Sorry if this sucks, I'm new to [Github](https://github.com/KGrady689).)
 
